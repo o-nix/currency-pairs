@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Currency Pairs</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/css/bootstrap-datepicker3.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://github.com/o-nix/currency-pairs">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>Currency Pairs</h1>
+    <p>Simple application for displaying two currencies and their relative rate.</p>
+  </div>
+
+  <div class="row is-flex Parameters">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <label for="from">Start date</label>
+        <input id="from" type="text" class="form-control Paremeters__input">
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="base-currency">Base currency</label>
+
+        <select id="base-currency" class="form-control">
+          <option value="EUR" selected="selected">EUR</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-sm-2 hidden-xs Parameters__icon">
+      <span class="glyphicon glyphicon-transfer"></span>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="quote-currency">Quote currency</label>
+
+        <select id="quote-currency" class="form-control">
+          <option value="USD" selected="selected">USD</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <label for="to">End date</label>
+      <input id="to" type="text" class="form-control Paremeters__input">
+    </div>
+  </div>
+
+  <div id="chart" class="Chart"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
