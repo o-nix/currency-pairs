@@ -4,5 +4,10 @@ language: java
 services:
   - docker
 
+cache:
+  directories:
+    - $HOME/.m2
+
 before_install:
   - docker-compose up -d mysql
+  - sleep 30s
