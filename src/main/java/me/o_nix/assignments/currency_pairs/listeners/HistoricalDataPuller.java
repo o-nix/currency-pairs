@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -40,11 +39,6 @@ public class HistoricalDataPuller implements ApplicationListener<ContextRefreshe
   private static final DateTimeFormatter FORMATTER = DateTimeFormatter
       .ofPattern("yyy-MM-dd")
       .withZone(ZoneOffset.UTC);
-
-  @PostConstruct
-  public void onInit() {
-    log.info(getClass().getName() + " initialized");
-  }
 
   @Autowired
   private RatesService ratesService;
