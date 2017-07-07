@@ -1,4 +1,4 @@
-## Meritservus Test Assignment
+## Meritservus Test Assignment [![Build Status](https://travis-ci.org/o-nix/currency-pairs.svg?branch=master)](https://travis-ci.org/o-nix/currency-pairs)
 
 ### Description
 
