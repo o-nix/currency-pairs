@@ -1,5 +1,7 @@
 ## Meritservus Test Assignment [![Build Status](https://travis-ci.org/o-nix/currency-pairs.svg?branch=master)](https://travis-ci.org/o-nix/currency-pairs)
 
+![Site Screenshot](https://user-images.githubusercontent.com/647149/28976214-b6d6db30-7945-11e7-95ea-b2f9f5c4d194.png)
+
 ### Description
 
 Write a client-server currency exchange service based on requirements.
